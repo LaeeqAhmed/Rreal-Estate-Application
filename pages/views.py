@@ -5,4 +5,9 @@ method bellow
 templates rendering
 '''
 def index(request):
-    return HttpResponse('<h1>first effort result</h1>')
+    return render(request, 'pages/index.html')
+
+
+#about method
+def about(request):
+    return render(request, 'pages/about.html')
