@@ -1,0 +1,44 @@
+## listings
+id: int (any listing consider of an specific id)
+realtor_key: int (foreign key [realtor]) (because any realtor is incharge of an listing(ho sakta ha dha ki site me jo realtor ha us ki nigrani lga hue ho waha par))
+title: str
+address: str
+city: str
+state: str
+zipcode: str
+description: str
+price: int
+bedrooms: int
+bathrooms: int
+garage: int [0]
+is_published: bool [true]
+sqft: int
+lot_size: float
+list_date: date
+//realtors name etc are fetch from above foreign key
+photo_main: str //save the location of the photo in the db
+photo_1: str
+photo_2: str
+photo_3: str
+photo_4: str
+photo_5: str
+photo_6: str
+
+## realtors
+id: int
+name: str
+photo: str
+description: text
+(seller of the month)is_mvp: bool [0]
+hire_date: date
+
+## contact inquieries
+id: int
+user_id: int// who can regestered
+listing: int
+listing_id: int
+name: str
+email: str
+phone: str
+message: text
+contactdate: date
