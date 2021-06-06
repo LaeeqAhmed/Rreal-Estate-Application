@@ -1,0 +1,14 @@
+{% extends 'admin/base.html' %}
+<!--now load the static files-->
+{% load static %}
+
+{% block branding %}
+<h1 id="head">
+    <img src="{% static 'img/logo.png' %}" alt="empireassociates" height="50" width="80" class="brand_image"> EmpireAssociates Admin Area
+</h1>
+{% endblock %}
+
+<!--for extra styling it is compulsory to write extrastyle in the block-->
+{% block extrastyle %}
+<link rel="stylesheet" href="{% static 'css/admin.css' %}">
+{% endblock %}
